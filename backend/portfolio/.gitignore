@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Secrets & Config ###
+application.yaml
+application.yml
+application-*.yaml
+application-*.yml
+*.env
+application.properties
