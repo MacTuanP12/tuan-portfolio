@@ -12,9 +12,5 @@ public class SkillRequest {
 
     @NotBlank(message = "Phân loại kỹ năng đi bro (VD: Backend, Core CS...)")
     private String category;
-
-    @Min(value = 1, message = "Điểm thành thạo thấp nhất là 1")
-    @Max(value = 100, message = "Điểm thành thạo cao nhất là 100 thôi bro")
-    private Integer proficiency;
 }
 

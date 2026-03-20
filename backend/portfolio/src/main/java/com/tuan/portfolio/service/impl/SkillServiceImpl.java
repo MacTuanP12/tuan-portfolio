@@ -26,7 +26,6 @@ public class SkillServiceImpl implements SkillService {
         Skill skill = new Skill();
         skill.setName(request.getName());
         skill.setCategory(request.getCategory());
-        skill.setProficiency(request.getProficiency());
         return mapToResponse(skillRepository.save(skill));
     }
 
@@ -35,7 +34,6 @@ public class SkillServiceImpl implements SkillService {
         response.setId(skill.getId());
         response.setName(skill.getName());
         response.setCategory(skill.getCategory());
-        response.setProficiency(skill.getProficiency());
         return response;
     }
 }

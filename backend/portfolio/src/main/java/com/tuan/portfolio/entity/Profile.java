@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "profiles")
@@ -18,6 +19,10 @@ public class Profile {
 
     private String fullName;
     private String title;
+    
+    private LocalDate birthDate;
+    private String education;
+    private String address;
 
     @Column(columnDefinition = "TEXT")
     private String aboutMe;

@@ -28,6 +28,9 @@ public class ProfileServiceImpl implements ProfileService {
 
         profile.setFullName(request.getFullName());
         profile.setTitle(request.getTitle());
+        profile.setBirthDate(request.getBirthDate());
+        profile.setEducation(request.getEducation());
+        profile.setAddress(request.getAddress());
         profile.setAboutMe(request.getAboutMe());
         profile.setGithubUrl(request.getGithubUrl());
         profile.setLinkedinUrl(request.getLinkedinUrl());
@@ -41,6 +44,9 @@ public class ProfileServiceImpl implements ProfileService {
         response.setId(profile.getId());
         response.setFullName(profile.getFullName());
         response.setTitle(profile.getTitle());
+        response.setBirthDate(profile.getBirthDate());
+        response.setEducation(profile.getEducation());
+        response.setAddress(profile.getAddress());
         response.setAboutMe(profile.getAboutMe());
         response.setGithubUrl(profile.getGithubUrl());
         response.setLinkedinUrl(profile.getLinkedinUrl());

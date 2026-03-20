@@ -16,5 +16,5 @@ public class Skill {
 
     private String name;
     private String category;
-    private Integer proficiency;
 }
+
